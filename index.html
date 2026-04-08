@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apex Cleaning — Premium Cleaning Services</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- FLOATING BOOK BUTTON -->
+<a href="#booking" class="float-btn">📅 Book Now</a>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">Apex<span>Cleaning</span></div>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#booking">Book</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#contact" class="nav-cta">Contact</a></li>
+  </ul>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#services" onclick="toggleMenu()">Services & Pricing</a>
+  <a href="#booking" onclick="toggleMenu()">Book Appointment</a>
+  <a href="#gallery" onclick="toggleMenu()">Gallery</a>
+  <a href="#reviews" onclick="toggleMenu()">Reviews</a>
+  <a href="#contact" onclick="toggleMenu()">Contact Us</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg-orb orb1"></div>
+  <div class="hero-bg-orb orb2"></div>
+  <div class="hero-badge">✦ Serving Greater Vancouver</div>
+  <h1>Spotless spaces,<br><em>elevated</em> living.</h1>
+  <p>Professional residential and commercial cleaning services. We bring the shine — you bring the coffee and relax.</p>
+  <div class="hero-btns">
+    <a href="#booking" class="btn-primary">Schedule a Clean</a>
+    <a href="#services" class="btn-outline">See Pricing</a>
+  </div>
+  <div class="hero-stats">
+    <div>
+      <div class="stat-num">200+</div>
+      <div class="stat-label">Happy Clients</div>
+    </div>
+    <div>
+      <div class="stat-num">5★</div>
+      <div class="stat-label">Average Rating</div>
+    </div>
+    <div>
+      <div class="stat-num">100%</div>
+      <div class="stat-label">Satisfaction</div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-tag">Pricing & Services</div>
+  <h2 class="section-title">Everything you need,<br>clearly priced.</h2>
+  <p class="section-sub">No hidden fees. No surprises. Just crystal-clear pricing and exceptional results every time.</p>
+  <div class="services-grid">
+
+    <div class="service-card">
+      <div class="service-icon">🏠</div>
+      <div class="service-name">Standard Clean</div>
+      <div class="service-desc">Our most popular service. Perfect for maintaining a clean, fresh home between deep cleans.</div>
+      <div class="service-price">From $120 <span>/ visit</span></div>
+      <ul class="service-includes">
+        <li>All rooms vacuumed & mopped</li>
+        <li>Kitchen wipe-down & surfaces</li>
+        <li>Bathrooms cleaned & sanitized</li>
+        <li>Trash removal</li>
+        <li>Beds made</li>
+      </ul>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">✨</div>
+      <div class="service-name">Deep Clean</div>
+      <div class="service-desc">A thorough top-to-bottom clean for homes needing extra attention or a fresh seasonal start.</div>
+      <div class="service-price">From $220 <span>/ visit</span></div>
+      <ul class="service-includes">
+        <li>Everything in Standard</li>
+        <li>Inside oven & fridge</li>
+        <li>Baseboards & light fixtures</li>
+        <li>Interior windows</li>
+        <li>Cabinet exteriors</li>
+        <li>Behind appliances</li>
+      </ul>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">📦</div>
+      <div class="service-name">Move In / Out</div>
+      <div class="service-desc">Leaving or arriving? We ensure your space is immaculate for the next chapter.</div>
+      <div class="service-price">From $280 <span>/ visit</span></div>
+      <ul class="service-includes">
+        <li>Full deep clean</li>
+        <li>Inside all cabinets & drawers</li>
+        <li>Walls spot-cleaned</li>
+        <li>All appliances inside & out</li>
+        <li>Closets & storage areas</li>
+      </ul>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">🏢</div>
+      <div class="service-name">Commercial</div>
+      <div class="service-desc">Office and commercial space cleaning tailored to your schedule and requirements.</div>
+      <div class="service-price">Custom <span>quote</span></div>
+      <ul class="service-includes">
+        <li>Offices & common areas</li>
+        <li>Washrooms sanitized</li>
+        <li>Reception & lobby</li>
+        <li>Flexible scheduling</li>
+        <li>Weekly/monthly plans</li>
+      </ul>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">🪟</div>
+      <div class="service-name">Window Cleaning</div>
+      <div class="service-desc">Crystal-clear interior and exterior windows. Let the light in beautifully.</div>
+      <div class="service-price">From $80 <span>/ visit</span></div>
+      <ul class="service-includes">
+        <li>Interior windows</li>
+        <li>Exterior windows (ground)</li>
+        <li>Tracks & sills cleaned</li>
+        <li>Streak-free finish</li>
+      </ul>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">🔄</div>
+      <div class="service-name">Recurring Plan</div>
+      <div class="service-desc">Save with scheduled weekly or biweekly cleans. Consistency at a better rate.</div>
+      <div class="service-price">Save 15% <span>/ recurring</span></div>
+      <ul class="service-includes">
+        <li>Weekly or biweekly visits</li>
+        <li>Same trusted cleaner</li>
+        <li>Priority scheduling</li>
+        <li>15% off regular pricing</li>
+        <li>Cancel anytime</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section id="booking">
+  <div class="section-tag">Book Appointment</div>
+  <h2 class="section-title" style="color:var(--cream)">Schedule your clean<br>in minutes.</h2>
+  <p class="section-sub">Fill out the form and we'll confirm your appointment via text or email within a few hours.</p>
+  <div class="booking-form">
+    <div class="form-row">
+      <div class="form-group">
+        <label>First Name</label>
+        <input type="text" id="fname" placeholder="Jane" required>
+      </div>
+      <div class="form-group">
+        <label>Last Name</label>
+        <input type="text" id="lname" placeholder="Smith">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label>Phone Number</label>
+        <input type="tel" id="phone" placeholder="604-555-0000">
+      </div>
+      <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" id="email" placeholder="jane@email.com">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label>Service Type</label>
+        <select id="service">
+          <option value="">Select a service…</option>
+          <option>Standard Clean</option>
+          <option>Deep Clean</option>
+          <option>Move In / Move Out</option>
+          <option>Commercial</option>
+          <option>Window Cleaning</option>
+          <option>Recurring Plan</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Preferred Date</label>
+        <input type="date" id="date">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label>Home Size</label>
+        <select id="size">
+          <option value="">Select size…</option>
+          <option>Studio / 1 Bed</option>
+          <option>2 Bedrooms</option>
+          <option>3 Bedrooms</option>
+          <option>4+ Bedrooms</option>
+          <option>Commercial Space</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Preferred Time</label>
+        <select id="time">
+          <option value="">Select time…</option>
+          <option>Morning (8am–12pm)</option>
+          <option>Afternoon (12pm–4pm)</option>
+          <option>Evening (4pm–7pm)</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group" style="margin-bottom:16px">
+      <label>Address</label>
+      <input type="text" id="address" placeholder="123 Main St, Maple Ridge, BC">
+    </div>
+    <div class="form-group" style="margin-bottom:20px">
+      <label>Additional Notes</label>
+      <textarea id="notes" placeholder="Any special requests, pets, access info…"></textarea>
+    </div>
+    <button class="form-submit" onclick="submitBooking()">Request Appointment →</button>
+    <p class="form-note">We'll reach out to confirm within a few hours. No payment required to book.</p>
+    <div class="success-msg" id="successMsg">
+      🎉 Thank you! Your request has been sent. We'll be in touch at your provided contact details shortly.
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+  <div class="section-tag">Our Work</div>
+  <h2 class="section-title">See the difference<br>Apex makes.</h2>
+  <p class="section-sub">Real results from real clients. Every space we touch gets the full Apex treatment.</p>
+  <div class="gallery-grid">
+
+    <div class="gallery-item wide">
+      <div class="gallery-visual gv-1">
+        <div class="gv-lines"></div>
+        <div class="icon">🍳</div>
+        <div class="label">Kitchen Deep Clean</div>
+      </div>
+      <div class="overlay"><span class="overlay-text">Kitchen — Deep Clean</span></div>
+    </div>
+
+    <div class="gallery-item">
+      <div class="gallery-visual gv-2">
+        <div class="gv-lines"></div>
+        <div class="icon">🛁</div>
+        <div class="label">Bathroom</div>
+      </div>
+      <div class="overlay"><span class="overlay-text">Bathroom Refresh</span></div>
+    </div>
+
+    <div class="gallery-item">
+      <div class="gallery-visual gv-3">
+        <div class="gv-lines"></div>
+        <div class="icon">🛋️</div>
+        <div class="label">Living Room</div>
+      </div>
+      <div class="overlay"><span class="overlay-text">Living Room Standard</span></div>
+    </div>
+
+    <div class="gallery-item">
+      <div class="gallery-visual gv-4">
+        <div class="gv-lines"></div>
+        <div class="icon">🪟</div>
+        <div class="label">Windows</div>
+      </div>
+      <div class="overlay"><span class="overlay-text">Window Cleaning</span></div>
+    </div>
+
+    <div class="gallery-item">
+      <div class="gallery-visual gv-5">
+        <div class="gv-lines"></div>
+        <div class="icon">🏢</div>
+        <div class="label">Office</div>
+      </div>
+      <div class="overlay"><span class="overlay-text">Commercial Office</span></div>
+    </div>
+
+    <div class="gallery-item">
+      <div class="gallery-visual gv-1">
+        <div class="gv-lines"></div>
+        <div class="icon">🛏️</div>
+        <div class="label">Bedroom</div>
+      </div>
+      <div class="overlay"><span class="overlay-text">Bedroom Move-Out</span></div>
+    </div>
+
+  </div>
+  <p style="margin-top:24px; font-size:0.85rem; color:var(--text-muted); text-align:center;">
+    Replace placeholder tiles above with your own photos — just swap in <code>&lt;img&gt;</code> tags. 📸
+  </p>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <div class="section-tag">Testimonials</div>
+  <h2 class="section-title">Our clients love<br>what we do.</h2>
+  <p class="section-sub">Don't take our word for it — here's what homeowners and businesses say.</p>
+  <div class="reviews-grid">
+
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p class="review-text">"Apex did a move-out clean for us and it was genuinely immaculate. The landlord was blown away and we got our full deposit back. Worth every penny."</p>
+      <div class="review-author">Sarah M.</div>
+      <div class="review-location">Maple Ridge, BC</div>
+    </div>
+
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p class="review-text">"I've had weekly cleaners before but nothing like this. They're thorough, reliable, and my kitchen actually looks like a showroom now."</p>
+      <div class="review-author">Jason T.</div>
+      <div class="review-location">Port Coquitlam, BC</div>
+    </div>
+
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p class="review-text">"Called them last minute before hosting a dinner party. They came the same day and absolutely saved me. The house was spotless in 2 hours."</p>
+      <div class="review-author">Priya K.</div>
+      <div class="review-location">Pitt Meadows, BC</div>
+    </div>
+
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p class="review-text">"We use Apex for our office every two weeks. Professionalism and consistency every time — our team notices and appreciates it."</p>
+      <div class="review-author">Marcus L.</div>
+      <div class="review-location">Langley, BC</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-tag">Get In Touch</div>
+  <h2 class="section-title" style="color:var(--cream)">Reach us anytime.</h2>
+  <p class="section-sub">Call, text, or email — we respond fast and love answering questions before you book.</p>
+  <div class="contact-cards">
+    <a href="tel:7787988131" class="contact-card">
+      <div class="contact-icon">📞</div>
+      <div>
+        <div class="contact-label">Call Us</div>
+        <div class="contact-value">778-798-8131</div>
+      </div>
+    </a>
+    <a href="sms:7787988131" class="contact-card">
+      <div class="contact-icon">💬</div>
+      <div>
+        <div class="contact-label">Text Us</div>
+        <div class="contact-value">778-798-8131</div>
+      </div>
+    </a>
+    <a href="mailto:alirezoabdulahad@gmail.com" class="contact-card">
+      <div class="contact-icon">✉️</div>
+      <div>
+        <div class="contact-label">Email Us</div>
+        <div class="contact-value">alirezoabdulahad@gmail.com</div>
+      </div>
+    </a>
+    <a href="#booking" class="contact-card">
+      <div class="contact-icon">📅</div>
+      <div>
+        <div class="contact-label">Book Online</div>
+        <div class="contact-value">Schedule Instantly</div>
+      </div>
+    </a>
+  </div>
+
+  <div class="service-area">
+    <h4>Areas We Serve</h4>
+    <div class="area-tags">
+      <span class="area-tag">Maple Ridge</span>
+      <span class="area-tag">Pitt Meadows</span>
+      <span class="area-tag">Port Coquitlam</span>
+      <span class="area-tag">Coquitlam</span>
+      <span class="area-tag">Langley</span>
+      <span class="area-tag">Abbotsford</span>
+      <span class="area-tag">Mission</span>
+      <span class="area-tag">Surrey</span>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <strong>Apex Cleaning</strong><br>
+  Serving Greater Vancouver & the Fraser Valley<br>
+  📞 <a href="tel:7787988131" style="color:rgba(245,240,232,0.5);text-decoration:none;">778-798-8131</a> &nbsp;|&nbsp;
+  ✉️ <a href="mailto:alirezoabdulahad@gmail.com" style="color:rgba(245,240,232,0.5);text-decoration:none;">alirezoabdulahad@gmail.com</a><br><br>
+  © 2025 Apex Cleaning. All rights reserved.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
