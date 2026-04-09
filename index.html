@@ -8,6 +8,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+  (function(){
+    emailjs.init("kRXjNB-yo0Ys5OyDP"); //public key from emailjs dashboard
+  })();
+</script>
 <body>
 
 <!-- FLOATING BOOK BUTTON -->
@@ -28,7 +35,7 @@
   </button>
 </nav>
 <div class="mobile-menu" id="mobileMenu">
-  <a href="#services" onclick="toggleMenu()">Services & Pricing</a>
+  <a href="#services" onclick="toggleMenu()">Services &amp; Pricing</a>
   <a href="#booking" onclick="toggleMenu()">Book Appointment</a>
   <a href="#gallery" onclick="toggleMenu()">Gallery</a>
   <a href="#reviews" onclick="toggleMenu()">Reviews</a>
@@ -40,15 +47,15 @@
   <div class="hero-bg-orb orb1"></div>
   <div class="hero-bg-orb orb2"></div>
   <div class="hero-badge">✦ Serving Greater Vancouver</div>
-  <h1>Spotless spaces,<br><em>elevated</em> living.</h1>
-  <p>Professional residential and commercial cleaning services. We bring the shine — you bring the coffee and relax.</p>
-  <div class="hero-btns">
+ <h1>Spotless rides,<br><em>elevated</em> driving.</h1>
+<p>Professional interior and exterior car detailing. We bring the shine, you sit back and enjoy the ride.</p>
+<div class="hero-btns">
     <a href="#booking" class="btn-primary">Schedule a Clean</a>
     <a href="#services" class="btn-outline">See Pricing</a>
   </div>
   <div class="hero-stats">
     <div>
-      <div class="stat-num">200+</div>
+      <div class="stat-num">100+</div>
       <div class="stat-label">Happy Clients</div>
     </div>
     <div>
@@ -64,103 +71,114 @@
 
 <!-- SERVICES -->
 <section id="services">
-  <div class="section-tag">Pricing & Services</div>
+  <div class="section-tag">Pricing &amp; Services</div>
   <h2 class="section-title">Everything you need,<br>clearly priced.</h2>
   <p class="section-sub">No hidden fees. No surprises. Just crystal-clear pricing and exceptional results every time.</p>
   <div class="services-grid">
 
     <div class="service-card">
-      <div class="service-icon">🏠</div>
-      <div class="service-name">Standard Clean</div>
-      <div class="service-desc">Our most popular service. Perfect for maintaining a clean, fresh home between deep cleans.</div>
-      <div class="service-price">From $120 <span>/ visit</span></div>
-      <ul class="service-includes">
-        <li>All rooms vacuumed & mopped</li>
-        <li>Kitchen wipe-down & surfaces</li>
-        <li>Bathrooms cleaned & sanitized</li>
-        <li>Trash removal</li>
-        <li>Beds made</li>
-      </ul>
-    </div>
+  <div class="service-icon">🚗</div>
+  <div class="service-name">Silver Package</div>
+  <div class="service-desc">Perfect for maintaining a clean, fresh vehicle with a full interior and exterior refresh.</div>
+  <div class="service-price">From $150 <span>/ sedan</span></div>
+  <ul class="service-includes">
+    <li>Interior vacuum (condition-based)</li>
+    <li>Interior wipe down</li>
+    <li>Steam cleaning (disinfecting)</li>
+    <li>Vent cleaning</li>
+    <li>Exterior hand wash (foam cannon)</li>
+    <li>Interior glass cleaning</li>
+    <li>Tires & wheels cleaned</li>
+    <li>Tire shine</li>
+  </ul>
+</div>
 
-    <div class="service-card">
-      <div class="service-icon">✨</div>
-      <div class="service-name">Deep Clean</div>
-      <div class="service-desc">A thorough top-to-bottom clean for homes needing extra attention or a fresh seasonal start.</div>
-      <div class="service-price">From $220 <span>/ visit</span></div>
-      <ul class="service-includes">
-        <li>Everything in Standard</li>
-        <li>Inside oven & fridge</li>
-        <li>Baseboards & light fixtures</li>
-        <li>Interior windows</li>
-        <li>Cabinet exteriors</li>
-        <li>Behind appliances</li>
-      </ul>
-    </div>
+<div class="service-card">
+  <div class="service-icon">✨</div>
+  <div class="service-name">Gold Package</div>
+  <div class="service-desc">A premium, deep-clean package for restoring and protecting your vehicle inside and out.</div>
+  <div class="service-price">From $260 <span>/ sedan</span></div>
+  <ul class="service-includes">
+    <li>Interior vacuum (deep clean)</li>
+    <li>Full interior wipe down</li>
+    <li>Interior protectant (UV protection)</li>
+    <li>Steam cleaning & disinfection</li>
+    <li>Leather cleaning & conditioning</li>
+    <li>Interior glass cleaning</li>
+    <li>Vent cleaning</li>
+    <li>Exterior hand wash (foam cannon)</li>
+    <li>Deep wheel & tire cleaning</li>
+    <li>Tire shine</li>
+  </ul>
+</div>
 
-    <div class="service-card">
-      <div class="service-icon">📦</div>
-      <div class="service-name">Move In / Out</div>
-      <div class="service-desc">Leaving or arriving? We ensure your space is immaculate for the next chapter.</div>
-      <div class="service-price">From $280 <span>/ visit</span></div>
-      <ul class="service-includes">
-        <li>Full deep clean</li>
-        <li>Inside all cabinets & drawers</li>
-        <li>Walls spot-cleaned</li>
-        <li>All appliances inside & out</li>
-        <li>Closets & storage areas</li>
-      </ul>
-    </div>
+<div class="service-card">
+  <div class="service-icon">🔥</div>
+  <div class="service-name">Premium Add-Ons</div>
+  <div class="service-desc">Upgrade your detail with advanced restoration and protection services.</div>
+  <div class="service-price">Custom <span>pricing</span></div>
+  <ul class="service-includes">
+    <li>Engine bay wash & shine</li>
+    <li>Clay bar paint decontamination</li>
+    <li>Cut & polish (up to 3 stages)</li>
+    <li>Light scratch removal</li>
+    <li>Headlight restoration</li>
+    <li>Pet hair removal</li>
+    <li>Interior shampoo & stain removal</li>
+    <li>Machine-applied wax (up to 3 months protection)</li>
+  </ul>
+</div>
 
-    <div class="service-card">
-      <div class="service-icon">🏢</div>
-      <div class="service-name">Commercial</div>
-      <div class="service-desc">Office and commercial space cleaning tailored to your schedule and requirements.</div>
-      <div class="service-price">Custom <span>quote</span></div>
-      <ul class="service-includes">
-        <li>Offices & common areas</li>
-        <li>Washrooms sanitized</li>
-        <li>Reception & lobby</li>
-        <li>Flexible scheduling</li>
-        <li>Weekly/monthly plans</li>
-      </ul>
-    </div>
+<div class="service-card">
+  <div class="service-icon">📊</div>
+  <div class="service-name">Vehicle Pricing</div>
+  <div class="service-desc">Pricing varies based on vehicle size. Larger vehicles require more time and materials.</div>
+  <div class="service-price">+$10 <span>/ size tier</span></div>
+  <ul class="service-includes">
+    <li>Sedan (base pricing)</li>
+    <li>SUV (+$10)</li>
+    <li>Truck (+$20)</li>
+    <li>7-Seater (+$30)</li>
+  </ul>
+</div>
 
-    <div class="service-card">
-      <div class="service-icon">🪟</div>
-      <div class="service-name">Window Cleaning</div>
-      <div class="service-desc">Crystal-clear interior and exterior windows. Let the light in beautifully.</div>
-      <div class="service-price">From $80 <span>/ visit</span></div>
-      <ul class="service-includes">
-        <li>Interior windows</li>
-        <li>Exterior windows (ground)</li>
-        <li>Tracks & sills cleaned</li>
-        <li>Streak-free finish</li>
-      </ul>
-    </div>
+<div class="service-card">
+  <div class="service-icon">🧼</div>
+  <div class="service-name">Interior Services</div>
+  <div class="service-desc">Individual interior services available based on your vehicle’s condition.</div>
+  <div class="service-price">From $5</div>
+  <ul class="service-includes">
+    <li>Interior vacuum ($25+)</li>
+    <li>Interior wipe down ($20+)</li>
+    <li>Steam cleaning ($25)</li>
+    <li>Vent cleaning ($10)</li>
+    <li>Interior glass ($5)</li>
+  </ul>
+</div>
 
-    <div class="service-card">
-      <div class="service-icon">🔄</div>
-      <div class="service-name">Recurring Plan</div>
-      <div class="service-desc">Save with scheduled weekly or biweekly cleans. Consistency at a better rate.</div>
-      <div class="service-price">Save 15% <span>/ recurring</span></div>
-      <ul class="service-includes">
-        <li>Weekly or biweekly visits</li>
-        <li>Same trusted cleaner</li>
-        <li>Priority scheduling</li>
-        <li>15% off regular pricing</li>
-        <li>Cancel anytime</li>
-      </ul>
-    </div>
+<div class="service-card">
+  <div class="service-icon">🚿</div>
+  <div class="service-name">Exterior Services</div>
+  <div class="service-desc">Professional exterior cleaning using safe methods to protect your paint.</div>
+  <div class="service-price">From $60</div>
+  <ul class="service-includes">
+    <li>Hand wash (foam cannon)</li>
+    <li>Two-bucket method</li>
+    <li>Grit guard protection</li>
+    <li>Wheel & tire cleaning ($15)</li>
+    <li>Tire shine ($5)</li>
+  </ul>
+</div>
 
   </div>
 </section>
 
 <!-- BOOKING -->
 <section id="booking">
-  <div class="section-tag">Book Appointment</div>
-  <h2 class="section-title" style="color:var(--cream)">Schedule your clean<br>in minutes.</h2>
-  <p class="section-sub">Fill out the form and we'll confirm your appointment via text or email within a few hours.</p>
+  <div class="section-tag">Book Detail</div>
+  <h2 class="section-title" style="color:var(--cream)">Get your car detailed<br>in minutes.</h2>
+  <p class="section-sub">Fill out the form and we’ll confirm your detailing appointment via text or email within a few hours.</p>
+
   <div class="booking-form">
     <div class="form-row">
       <div class="form-group">
@@ -172,6 +190,7 @@
         <input type="text" id="lname" placeholder="Smith">
       </div>
     </div>
+
     <div class="form-row">
       <div class="form-group">
         <label>Phone Number</label>
@@ -182,36 +201,36 @@
         <input type="email" id="email" placeholder="jane@email.com">
       </div>
     </div>
+
     <div class="form-row">
       <div class="form-group">
-        <label>Service Type</label>
+        <label>Package</label>
         <select id="service">
-          <option value="">Select a service…</option>
-          <option>Standard Clean</option>
-          <option>Deep Clean</option>
-          <option>Move In / Move Out</option>
-          <option>Commercial</option>
-          <option>Window Cleaning</option>
-          <option>Recurring Plan</option>
+          <option value="">Select a package…</option>
+          <option>Silver Package</option>
+          <option>Gold Package</option>
+          <option>Custom / Add-Ons</option>
         </select>
       </div>
+
       <div class="form-group">
         <label>Preferred Date</label>
         <input type="date" id="date">
       </div>
     </div>
+
     <div class="form-row">
       <div class="form-group">
-        <label>Home Size</label>
+        <label>Vehicle Type</label>
         <select id="size">
-          <option value="">Select size…</option>
-          <option>Studio / 1 Bed</option>
-          <option>2 Bedrooms</option>
-          <option>3 Bedrooms</option>
-          <option>4+ Bedrooms</option>
-          <option>Commercial Space</option>
+          <option value="">Select vehicle…</option>
+          <option>Sedan</option>
+          <option>SUV (+$10)</option>
+          <option>Truck (+$20)</option>
+          <option>7-Seater (+$30)</option>
         </select>
       </div>
+
       <div class="form-group">
         <label>Preferred Time</label>
         <select id="time">
@@ -222,18 +241,23 @@
         </select>
       </div>
     </div>
+
     <div class="form-group" style="margin-bottom:16px">
-      <label>Address</label>
+      <label>Service Address</label>
       <input type="text" id="address" placeholder="123 Main St, Maple Ridge, BC">
     </div>
+
     <div class="form-group" style="margin-bottom:20px">
       <label>Additional Notes</label>
-      <textarea id="notes" placeholder="Any special requests, pets, access info…"></textarea>
+      <textarea id="notes" placeholder="Vehicle condition, pet hair, stains, special requests…"></textarea>
     </div>
-    <button class="form-submit" onclick="submitBooking()">Request Appointment →</button>
-    <p class="form-note">We'll reach out to confirm within a few hours. No payment required to book.</p>
+
+    <button class="form-submit" onclick="submitBooking()">Request Detail →</button>
+
+    <p class="form-note">We’ll reach out to confirm your appointment shortly. No payment required to book.</p>
+
     <div class="success-msg" id="successMsg">
-      🎉 Thank you! Your request has been sent. We'll be in touch at your provided contact details shortly.
+      🚗 Thank you! Your detailing request has been sent. We’ll contact you shortly to confirm.
     </div>
   </div>
 </section>
@@ -245,7 +269,7 @@
   <p class="section-sub">Real results from real clients. Every space we touch gets the full Apex treatment.</p>
   <div class="gallery-grid">
 
-    <div class="gallery-item wide">
+    <!-- <div class="gallery-item wide">
       <div class="gallery-visual gv-1">
         <div class="gv-lines"></div>
         <div class="icon">🍳</div>
@@ -297,11 +321,11 @@
         <div class="label">Bedroom</div>
       </div>
       <div class="overlay"><span class="overlay-text">Bedroom Move-Out</span></div>
-    </div>
+    </div> -->
 
   </div>
   <p style="margin-top:24px; font-size:0.85rem; color:var(--text-muted); text-align:center;">
-    Replace placeholder tiles above with your own photos — just swap in <code>&lt;img&gt;</code> tags. 📸
+   Images coming soon! Take a look at our instagram page for now: <a href="https://www.instagram.com/apex_cleaning1/" target="_blank" style="color:var(--teal); text-decoration:none;">@apexcleaning</a>
   </p>
 </section>
 
@@ -309,36 +333,29 @@
 <section id="reviews">
   <div class="section-tag">Testimonials</div>
   <h2 class="section-title">Our clients love<br>what we do.</h2>
-  <p class="section-sub">Don't take our word for it — here's what homeowners and businesses say.</p>
+  <p class="section-sub">Don't take our word for it? Here's what our customers say!</p>
   <div class="reviews-grid">
 
     <div class="review-card">
-      <div class="stars">★★★★★</div>
-      <p class="review-text">"Apex did a move-out clean for us and it was genuinely immaculate. The landlord was blown away and we got our full deposit back. Worth every penny."</p>
-      <div class="review-author">Sarah M.</div>
-      <div class="review-location">Maple Ridge, BC</div>
-    </div>
+  <div class="stars">★★★★★</div>
+  <p class="review-text">"Got the Gold package and my car honestly looked brand new. The interior was spotless and the paint had a crazy shine. You can tell they really take their time."</p>
+  <div class="review-author">Ali Abdul Ahad</div>
+  <div class="review-location">Maple Ridge, BC</div>
+</div>
 
-    <div class="review-card">
-      <div class="stars">★★★★★</div>
-      <p class="review-text">"I've had weekly cleaners before but nothing like this. They're thorough, reliable, and my kitchen actually looks like a showroom now."</p>
-      <div class="review-author">Jason T.</div>
-      <div class="review-location">Port Coquitlam, BC</div>
-    </div>
+<div class="review-card">
+  <div class="stars">★★★★★</div>
+  <p class="review-text">"I had a lot of stains and dirt from daily driving and they completely brought the interior back to life. Super professional and worth it."</p>
+  <div class="review-author">Ahmed Ehsani</div>
+  <div class="review-location">Maple Ridge, BC</div>
+</div>
 
-    <div class="review-card">
-      <div class="stars">★★★★★</div>
-      <p class="review-text">"Called them last minute before hosting a dinner party. They came the same day and absolutely saved me. The house was spotless in 2 hours."</p>
-      <div class="review-author">Priya K.</div>
-      <div class="review-location">Pitt Meadows, BC</div>
-    </div>
-
-    <div class="review-card">
-      <div class="stars">★★★★★</div>
-      <p class="review-text">"We use Apex for our office every two weeks. Professionalism and consistency every time — our team notices and appreciates it."</p>
-      <div class="review-author">Marcus L.</div>
-      <div class="review-location">Langley, BC</div>
-    </div>
+<div class="review-card">
+  <div class="stars">★★★★★</div>
+  <p class="review-text">"Booked a last-minute detail before selling my car and it made a huge difference. The car looked way better and helped me get a higher price."</p>
+  <div class="review-author">Mitchell MacDonald</div>
+  <div class="review-location">Maple Ridge, BC</div>
+</div>
 
   </div>
 </section>
@@ -397,7 +414,7 @@
 <!-- FOOTER -->
 <footer>
   <strong>Apex Cleaning</strong><br>
-  Serving Greater Vancouver & the Fraser Valley<br>
+  Serving Greater Vancouver &amp; the Fraser Valley<br>
   📞 <a href="tel:7787988131" style="color:rgba(245,240,232,0.5);text-decoration:none;">778-798-8131</a> &nbsp;|&nbsp;
   ✉️ <a href="mailto:alirezoabdulahad@gmail.com" style="color:rgba(245,240,232,0.5);text-decoration:none;">alirezoabdulahad@gmail.com</a><br><br>
   © 2025 Apex Cleaning. All rights reserved.
